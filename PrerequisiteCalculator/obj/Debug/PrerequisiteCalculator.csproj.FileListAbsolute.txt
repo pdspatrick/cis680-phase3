@@ -1,0 +1,7 @@
+D:\pdspa\Github Code\cis680-phase3\PrerequisiteCalculator\bin\TypeScriptHTMLApp1.dll.config
+D:\pdspa\Github Code\cis680-phase3\PrerequisiteCalculator\bin\TypeScriptHTMLApp1.dll
+D:\pdspa\Github Code\cis680-phase3\PrerequisiteCalculator\bin\TypeScriptHTMLApp1.pdb
+D:\pdspa\Github Code\cis680-phase3\PrerequisiteCalculator\obj\Debug\PrerequisiteCalculator.csprojAssemblyReference.cache
+D:\pdspa\Github Code\cis680-phase3\PrerequisiteCalculator\obj\Debug\PrerequisiteCalculator.csproj.CoreCompileInputs.cache
+D:\pdspa\Github Code\cis680-phase3\PrerequisiteCalculator\obj\Debug\TypeScriptHTMLApp1.dll
+D:\pdspa\Github Code\cis680-phase3\PrerequisiteCalculator\obj\Debug\TypeScriptHTMLApp1.pdb
