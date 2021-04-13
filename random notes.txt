@@ -1,0 +1,6 @@
+.LOG
+
+
+8:13 PM 4/12/2021 - about 4 hours
+
+Playing with typescript, and ive decided to create the UI first (to make testing a bit easier), so that mucks up my schedule a bit. Mainly doing this so I can get a chance to learn TypeScript a little better before I try adding things like data or XML lookups. There will be an app script file, and a core script file - which will be the "API" i had previously described.
