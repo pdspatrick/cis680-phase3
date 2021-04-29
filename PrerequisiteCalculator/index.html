@@ -4,8 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <title>TypeScript HTML App</title>
-    <link rel="stylesheet" href="app.css" type="text/css" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
+    <script>$(document).ready(function () {
+        $("#go").click(function () {
+            calculate();
+        });
+    });
+    </script>
 </head>
 <body>
     <h1>TypeScript HTML App</h1>
@@ -13,7 +20,7 @@
     <div id="formset">
         <form id="classForm">
             <table border="0" style="border-collapse: collapse;" width="500">
-                <tr><td colspan="3"><h4 style="text-align: center">Classes to check prerequisites of</h4></td><td><button type="button" id="go" onclick="calculate()">Calculate</button></td></tr>
+                <tr><td colspan="3"><h4 style="text-align: center">Classes to check prerequisites of</h4></td><td><button type="button" id="go">Calculate</button></td></tr>
                 <tbody>
                     <tr>
                         <td style="width: 25%;"><input id="class_1" name="class_1" class="input" type="text" maxlength="8" value="" /> </td>

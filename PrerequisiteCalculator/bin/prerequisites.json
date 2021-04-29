@@ -1,0 +1,11 @@
+[
+  {
+    "class": "AET262",
+    "requirements": "AET160, AET261, EET113"
+  },
+  {
+    "class": "EET113",
+    "requirements": "MATH115"
+  }
+
+]

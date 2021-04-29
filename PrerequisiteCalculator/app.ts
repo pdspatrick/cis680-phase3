@@ -1,30 +1,4 @@
-﻿
-
-
-class Greeter {
-    private element: HTMLElement;
-    private span: HTMLElement;
-    private timerToken: number;
-    
-
-    constructor(element: HTMLElement) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement("span");
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
-    }
-
-    public start() {
-        this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
-    }
-
-    public stop() {
-        clearTimeout(this.timerToken);
-    }
-}
-
-class Form1 {
+﻿class Form1 {
     private formset: HTMLElement;
     private result: HTMLElement;
     public goButton: HTMLElement;
@@ -43,9 +17,22 @@ window.onload = () => {
     const fl = document.getElementById("classForm");
     const r1 = document.getElementById("result");
     const form = new Form1(fl, r1);
+
 };
 
-function calculate() {
+function calculate(): void {
+    alert("oop here we go")
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var prereqlist = JSON.parse(this.responseText);
+        }
+    }
+    xmlhttp.open("get", "./prerequisites.json");
+    xmlhttp.send();
+    $.getJSON("./prerequisites.json", function (result) {
+        console.log(result)
+    });
     const data = new FormData(document.forms.item(0));
     const entries = data.entries();
     for (let entry of entries) {
@@ -53,6 +40,5 @@ function calculate() {
         const vall = entry[1]
         console.log(key, vall)
     }
- }
-
+}
 

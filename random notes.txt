@@ -3,4 +3,31 @@
 
 8:13 PM 4/12/2021 - about 4 hours
 
-Playing with typescript, and ive decided to create the UI first (to make testing a bit easier), so that mucks up my schedule a bit. Mainly doing this so I can get a chance to learn TypeScript a little better before I try adding things like data or XML lookups. There will be an app script file, and a core script file - which will be the "API" i had previously described.
+Playing with typescript, and ive decided to create the UI first (to make testing a bit easier), so that mucks up my schedule a bit. Mainly doing this so I can get a chance to learn TypeScript a little better before I try adding things like data or XML lookups. There will be an app script file, and a core script file - which will be the "API" i had previously described. Propbably gonna spend the next few days just thinking about this in the background - lost of student senate and RHA stuff ahead.
+
+
+
+6:23 PM 4/15/2021 - about 3 hours
+
+Trying to figure out how to read databases from JavaScript/Typescript. It is....problematic. At the same time, I don't want to be using a giant JSON file containing all of this data to be validated - but that might be what I end up doing.
+
+
+
+4:26 PM 4/18/2021 - about 4 hours
+
+So I have the UI (basically) done. And I'm still not sure how to do the data file containing the classes, but I am running super short on time. Probably gonna just do a JSON with everything - even though I hate the idea. Probably not doing much the next few days - lots of work to do for the senate, RHA, and my CIS602 class has the final paper due on friday, so I might need to turn in what I have at this point for the "Lessons Learned" portion later on, and use the time before I present to shore things up.
+
+Note to self: Never trust Dell to meet a shipping timeline, even if you pay them extra to ensure that it happens.
+
+
+
+1:26 PM 4/27/2021 - 3 hours
+
+It has been a while, but life gets busy.
+Figuring out how to format the data in, doing some digging into using CSV files in Javascript which....I hate all the solutions. I am probably going to use JSON, even though it isn't really designed to do that sort of thing. One huge advantage of this: no external libraries! Not even jQuery!
+
+
+
+4:48 PM 4/29/2021 - 6 hours
+
+I lied, using jQuery. Only way I can reliably zip in the prerequisites file without redoing a bunch of unnessicary stuff. Also got the function to trigger and all that. All i have left is the actual calculation bits (which compared to what I have done so far should be easy). I don't think I will have time to prettify it since stuff is due tomorrow 😓.

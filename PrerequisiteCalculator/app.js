@@ -1,18 +1,3 @@
-class Greeter {
-    constructor(element) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement("span");
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
-    }
-    start() {
-        this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
-    }
-    stop() {
-        clearTimeout(this.timerToken);
-    }
-}
 class Form1 {
     constructor(formset, result) {
         this.formset = formset;
@@ -29,6 +14,18 @@ window.onload = () => {
     const form = new Form1(fl, r1);
 };
 function calculate() {
+    alert("oop here we go");
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var prereqlist = JSON.parse(this.responseText);
+        }
+    };
+    xmlhttp.open("get", "./prerequisites.json");
+    xmlhttp.send();
+    $.getJSON("./prerequisites.json", function (result) {
+        console.log(result);
+    });
     const data = new FormData(document.forms.item(0));
     const entries = data.entries();
     for (let entry of entries) {
