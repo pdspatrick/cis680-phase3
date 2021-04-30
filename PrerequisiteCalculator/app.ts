@@ -54,5 +54,5 @@ function calculate(): void {
     console.log(classesToCheck);
     console.log(allClasses);
     var output = document.getElementById("result");
-    output.textContent = classesToCheck.toString();
+    output.textContent = (classesToCheck.toString() + ", total of " + classesToCheck.length + " classes. Greater than 4 classes total may indicate a problem.");
 }
