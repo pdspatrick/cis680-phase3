@@ -15,23 +15,33 @@ window.onload = () => {
 };
 function calculate() {
     alert("oop here we go");
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            var prereqlist = JSON.parse(this.responseText);
+    var allClasses = [];
+    var classesToCheck = [];
+    $.getJSON("./prerequisites.json", function (data) {
+        for (let entry of data) {
+            allClasses.push(entry);
         }
-    };
-    xmlhttp.open("get", "./prerequisites.json");
-    xmlhttp.send();
-    $.getJSON("./prerequisites.json", function (result) {
-        console.log(result);
     });
     const data = new FormData(document.forms.item(0));
     const entries = data.entries();
     for (let entry of entries) {
         const key = entry[0];
         const vall = entry[1];
-        console.log(key, vall);
+        if (vall != "") {
+            classesToCheck.push(vall);
+        }
     }
+    console.log(allClasses);
+    classesToCheck.forEach(toCheck => function () {
+        allClasses.forEach(course => function () {
+            if (toCheck == course.class) {
+                classesToCheck.join(course.requirements);
+            }
+        });
+    });
+    console.log(classesToCheck);
+    console.log(allClasses);
+    var output = document.getElementById("result");
+    output.textContent = classesToCheck.toString();
 }
 //# sourceMappingURL=app.js.map
