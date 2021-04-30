@@ -20,6 +20,10 @@ So I have the UI (basically) done. And I'm still not sure how to do the data fil
 Note to self: Never trust Dell to meet a shipping timeline, even if you pay them extra to ensure that it happens.
 
 
+12:45 AM 4/22/2021 - 6 hours
+
+Trying to catch up on things, both with this project and other things. Not much specific code was "created" for this - mostly playing with different ways to do things - probably two lists (as I had originally imagined) - one with the classes entered by the user, and one with a list of all classes. I had originally considered going at this backwards, but that doesn't pull requirements of requirements (if that happens), but having to loop through the allClasses list multiple times wouldn't be a huge impact in this instance - as its done client side, and will only likely do it no more than 6 times.
+
 
 1:26 PM 4/27/2021 - 3 hours
 
@@ -30,10 +34,11 @@ Figuring out how to format the data in, doing some digging into using CSV files 
 
 4:48 PM 4/29/2021 - 6 hours
 
-I lied, using jQuery. Only way I can reliably zip in the prerequisites file without redoing a bunch of unnecessary stuff. Also got the function to trigger and all that. All i have left is the actual calculation bits (which compared to what I have done so far should be easy). I don't think I will have time to prettify it since stuff is due tomorrow 😓.
+Well now I am using jQuery. Only way I can reliably zip in the prerequisites file without redoing a bunch of unnecessary stuff. Also got the function to trigger and all that. All i have left is the actual calculation bits (which compared to what I have done so far should be easy). I don't think I will have time to prettify it since stuff is due tomorrow 😓.
 
 
 
 4:03 AM 4/30/2021 - 7 hours
 
 I give up on it, for now. I got it as far as iterating through the two lists to grab the prereqs from a set list - and it just doesnt enter that loop. I wrote a bunch about it and plan to explain in the powerpoint, but....not sure how well that will land
+
